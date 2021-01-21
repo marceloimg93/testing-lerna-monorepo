@@ -1,7 +1,8 @@
-'use strict';
+const express = require('express')
 
-module.exports = package2;
+const app = express();
+const PORT = process.env.PORT || 3001
 
-function package2() {
-    // TODO
-}
+app.use('/', (req, res) => res.send('Hello World Package2'))
+
+app.listen(PORT, () => console.log('Package 2 Started'))
