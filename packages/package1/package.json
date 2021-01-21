@@ -18,12 +18,15 @@
     "url": "git+https://github.com/marceloimg93/testing-lerna-monorepo.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "dev": "npx nodemon ./lib/package1.js"
   },
   "bugs": {
     "url": "https://github.com/marceloimg93/testing-lerna-monorepo/issues"
   },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
